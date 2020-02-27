@@ -1,13 +1,69 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+section.homepage {
+  background: url("./assets/background.jpg");
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background: yellow; */
+}
+section.homepage h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+}
+
+section.homepage p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+section.car-page {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.car-page-hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.bmw-page {
+  background: url("./assets/bmw-back.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+section.merc-page {
+  background: url("./assets/merc-back.jpg");
+  background-size: cover;
+  background-position: top;
+}
+section.car-page .row {
+  width: 100%;
 }
